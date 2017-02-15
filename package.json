@@ -1,0 +1,24 @@
+{
+  "name": "html-webpack-inline-chunks-plugin",
+  "version": "1.0.0",
+  "description": "a webpack plugin work with html-webpack-plugin，use it to insert script as inline to html file.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Rookiewan/htmlWebpackInlineChunksPlugin.git"
+  },
+  "keywords": [
+    "webpack",
+    "html-webpack-plugin",
+    "html-webpack-inline-plugin"
+  ],
+  "author": "Rookiewan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rookiewan/htmlWebpackInlineChunksPlugin/issues"
+  },
+  "homepage": "https://github.com/Rookiewan/htmlWebpackInlineChunksPlugin#readme"
+}

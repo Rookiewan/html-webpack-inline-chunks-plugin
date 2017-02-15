@@ -1,4 +1,4 @@
-# htmlWebpackInlineChunksPlugin
+# html-webpackinline-chunks-plugin
 a webpack plugin work with html-webpack-plugin，use it to insert script as inline to html file.
 This is an extension plugin for the [webpack](http://webpack.github.io) plugin [html-webpack-plugin](https://github.com/ampedandwired/html-webpack-plugin).  It allows you to embed javascript and css source inline.
 

@@ -1,16 +1,17 @@
 function HtmlWebpackInlineChunksPlugin (opt) {
   this.chunks = opt && opt.chunks || []
+  console.log(this.chunks)
 }
 HtmlWebpackInlineChunksPlugin.prototype.apply = function (compiler, callback) {
   compiler.plugin('compilation', compilation => {
     compilation.plugin('html-webpack-plugin-alter-asset-tags', (htmlPluginData, callback) => {
       // 合并去重
-      this.chunks = Array.from(new Set(this.chunks.concat(htmlPluginData.plugin.options.inlineChunks)))
+      let chunks = Array.from(new Set(this.chunks.concat(htmlPluginData.plugin.options.inlineChunks)))
       let publicPath = compilation.options.output.publicPath || ''
       if (publicPath && publicPath.substr(-1) !== '/') {
             publicPath += '/'
       }
-      this.chunks.forEach(name => {
+      chunks.forEach(name => {
         if (name === undefined) {
            return
         }
@@ -30,5 +31,4 @@ HtmlWebpackInlineChunksPlugin.prototype.apply = function (compiler, callback) {
     })
   })
 }
-
 module.exports = HtmlWebpackInlineChunksPlugin

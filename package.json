@@ -1,6 +1,6 @@
 {
   "name": "html-webpack-inline-chunks-plugin",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "a webpack plugin work with html-webpack-plugin，use it to insert script as inline to html file.",
   "main": "index.js",
   "scripts": {

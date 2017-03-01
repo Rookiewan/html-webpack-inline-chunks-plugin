@@ -1,6 +1,5 @@
 function HtmlWebpackInlineChunksPlugin (opt) {
   this.chunks = opt && opt.chunks || []
-  console.log(this.chunks)
 }
 HtmlWebpackInlineChunksPlugin.prototype.apply = function (compiler, callback) {
   compiler.plugin('compilation', compilation => {
